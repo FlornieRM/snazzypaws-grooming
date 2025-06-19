@@ -1,0 +1,63 @@
+<!--
+BIT607 Web Development - Assessment 2
+Course Code: BIT607
+Student Name: Flornie Malinao
+Student Number: 5038893
+
+This is the Booking page for Snazzy Paws Grooming. It provides
+a form for users to submit appointment requests with required
+fields for owner and dog details, using accessible form patterns.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snazzy Paws Grooming - Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header & Nav -->
+  <header>
+    <nav>
+      <h1>Snazzy Paws Grooming</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="booking.html" class="active">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="login-btn">Log In</button>
+    </nav>
+  </header>
+
+   <!-- Appointment Form Section -->
+  <section class="booking">
+    <h2>Book an Appointment</h2>
+    <form>
+      <label for="owner-name">Owner’s Name</label>
+      <input type="text" id="owner-name" name="owner-name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="dog-name">Dog’s Name</label>
+      <input type="text" id="dog-name" name="dog-name" required>
+
+      <label for="breed">Breed</label>
+      <input type="text" id="breed" name="breed">
+
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age">
+
+      <button type="submit" class="btn-primary">Submit Booking</button>
+    </form>
+  </section>
+
+    <!-- Footer -->
+  <footer>
+    <p>Open: Mon – Sat, 9 am – 5 pm</p>
+  </footer>
+</body>
+</html>

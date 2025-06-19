@@ -1,0 +1,140 @@
+<!--
+BIT607 Web Development - Assessment 2
+Course Code: BIT607
+Student Name: Flornie Malinao
+Student Number: 5038893
+
+This is the Home page for Snazzy Paws Grooming. It introduces the brand,
+features a hero banner, product showcase, intro video, featured services,
+testimonials, and a sign-up form, following HCI/UX best practices.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snazzy Paws Grooming - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- Header and Navigation: site-wide branding and menu -->
+  <header>
+    <nav>
+      <h1>Snazzy Paws Grooming</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="login-btn">Log In</button>
+    </nav>
+  </header>
+
+  <!-- Hero Banner Section: main call-to-action with overlay -->
+  <section class="hero-banner">
+    <div class="hero-image-container">
+      <img src="images_home-hero.jpg" alt="Happy groomed dog" class="hero-img">
+      <div class="hero-overlay">
+        <h2>Top-notch dog grooming in Hamilton</h2>
+        <a href="booking.html" class="btn-primary">Book Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Products Section: showcases key offerings -->
+  <section class="our-products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="product1.jpg" alt="New product">
+        <h3>New product</h3>
+      </div>
+      <div class="product-card">
+        <img src="product2.jpg" alt="Cool new blog">
+        <h3>Cool new blog</h3>
+      </div>
+      <div class="product-card">
+        <img src="product3.jpg" alt="Our people">
+        <h3>Our people</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro Video Section: provides a brief video about services -->
+  <section class="intro-video">
+    <h2>Intro Video</h2>
+    <video controls class="responsive-video">
+      <source src="videos/intro.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+   <!-- Featured Services Section: highlights special services -->
+  <section class="featured-services">
+    <div class="service-item">
+      <img src="service1.jpg" alt="Featured service 1">
+      <div class="service-info">
+        <h3>Featured services 1</h3>
+        <p>Stay in loop with our company news. Sign up to our newsletter and receive the freshest info.</p>
+        <a href="#" class="btn-secondary">Sign Up</a>
+      </div>
+    </div>
+    <div class="service-item reverse">
+      <div class="service-info">
+        <h3>Featured services 2</h3>
+        <p>Stay in loop with our company news. Sign up to our newsletter and receive the freshest info.</p>
+        <a href="#" class="btn-secondary">Sign Up</a>
+      </div>
+      <img src="service2.jpg" alt="Featured service 2">
+    </div>
+  </section>
+
+   <!-- Testimonials Section: customer feedback cards -->
+  <section class="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial-cards">
+      <div class="testimonial-card">
+        <p>“This product brings my dog back to life!”</p>
+        <p class="author">- Alex Turner</p>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="testimonial-card">
+        <p>“My dog has never looked better.”</p>
+        <p class="author">- Jamie Fox</p>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="testimonial-card">
+        <p>“Exceptional service and care.”</p>
+        <p class="author">- Sam Lee</p>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Slider -->
+  <section class="testimonial-slider">
+    <h2>Testimonials Slider</h2>
+    <div class="slider">
+      <div class="slide">Services 1</div>
+      <div class="slide">Services 2</div>
+      <div class="slide">Services 3</div>
+    </div>
+  </section>
+
+<!-- Sign-up Form Section: newsletter subscription -->
+  <section class="signup-form">
+    <h2>Sign-up for Updates</h2>
+    <form>
+      <input type="email" placeholder="Email address" required>
+      <button type="submit" class="btn-primary">Submit</button>
+    </form>
+  </section>
+
+   <!-- Footer: opening hours and basic info -->
+  <footer>
+    <p>Open: Mon – Sat, 9 am – 5 pm</p>
+  </footer>
+</body>
+</html>
