@@ -1,0 +1,7 @@
+# Protect roster.html only
+<Files "roster.html">
+  AuthType Basic
+  AuthName "Staff Only Area"
+  AuthUserFile https://github.com/FlornieRM/snazzypaws-grooming/blob/master/roster.html).htpasswd
+  Require valid-user
+</Files>
